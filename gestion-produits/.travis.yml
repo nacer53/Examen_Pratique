@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - openjdk17
+
+# installer Maven avant d'exécuter les tests 
+before_install:
+  - chmod +x mvnw
+
+# Commande pour exécuter les tests Maven
+script:
+  - ./mvnw test
